@@ -1,4 +1,11 @@
-<table>
+<link rel="stylesheet" href="/css/tableViewsReviews.css">
+
+<h1>Tabla de reviews</h1>
+
+<a href="/" class="aBackToAdd">Agrega una review</a>
+
+<div class="tableOfReviewsDiv">
+    <table>
     <thead>
         <tr>
             <th>N.</th>
@@ -19,14 +26,16 @@
                 <td>{{titleSaucer}}</td>
                 <td>{{descriptionSaucer}}</td>
                 <td>{{restaurant}}</td>
-                <td><img src={{photoOfSaucer}} alt=""></td>
-                <td>{{priceOfSaucer}}</td>
-                <td>{{calificationSaucer}}</td>
+                <td><img class="imgTable" src={{photoOfSaucer}} alt=""></td>
+                <td>${{priceOfSaucer}}</td>
+                <td>{{calificationSaucer}} estrellas</td>
                 <td>
-                    <a href="/edit/{{_id}}">Editar</a>
-                    <a href="/delete/{{_id}}">Eliminar</a>
+                    <a href="/edit/{{_id}}" class="editButton">Editar</a>
+                    <a href="/delete/{{_id}}" class="deleteButton">Eliminar</a>
                 </td>
             </tr>
         {{/each}}
     </tbody>
 </table>
+
+</div>

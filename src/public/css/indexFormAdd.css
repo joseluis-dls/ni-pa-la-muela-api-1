@@ -1,0 +1,123 @@
+.titleFormAddReview{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+input{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(66, 63, 63);
+}
+
+p{
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.formIndexAddReview{
+    margin-left: 25%;
+    width: 50%;
+    height: 480px;
+}
+
+.formIndexAddReview form{
+    width: 100%;
+    height: 490px;
+    background-color: beige;
+}
+.tsd{
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.tsd input{
+    width: 70%;
+}
+
+.dsd{
+    width: 100%;
+    height: auto;
+}
+
+.dsd textarea{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.rsd{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.rsd select{
+    width: 75%;
+    height: 25px;
+}
+
+.psd{
+    width: 100%;
+    height: 40px;
+}
+
+.psd input{
+    width: 72%;
+}
+
+.prsd{
+    width: 100%;
+    height: 40px;
+}
+
+.prsd input{
+    width: 70%;
+}
+
+.csd{
+    width: 100%;
+    height: 40px;
+}
+
+.csd select{
+    width: 63%;
+    height: 25px;
+}
+
+.formIndexAddReview button{
+    margin-top: 15px;
+    width: 25%;
+    height: 30px;
+    margin-left: 25%;
+    background-color: rgb(16, 99, 16);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.formIndexAddReview a{
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    background-color: rgb(87, 87, 192);
+    color: white;
+}
+
+
+
+.formIndexAddReview form label{
+    font-size: 20px;
+    padding: 10px;
+}
+

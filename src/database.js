@@ -1,8 +1,9 @@
 import {connect} from "mongoose";
+import {MONGODB_URI} from "./config"
 
 (async()=>{
     try{
-        const db = await connect("mongodb://127.0.0.1:27017/crud-restaurantes");
+        const db = await connect(MONGODB_URI,{ useNewUrlParser: true });
         console.log("Db connected to", db.connection.name);
     }catch(e){
         console.log(e)

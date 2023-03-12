@@ -1,13 +1,21 @@
-<form action="/edit/{{review._id}}" method="post">
-    <div>
+<link rel="stylesheet" href="/css/editReviewStyle.css">
+
+<h1 class="titleFormEditReview">Edita una reseña</h1>
+
+<a href="/" class="addReviewA">Agrega una reseña</a>
+<a href="/reviews/view" class="viewTableOfReviews">Tabla de reseñas</a>
+
+<div class="formIndexEditReview">
+    <form action="/edit/{{review._id}}" method="post">
+    <div class="tsd">
         <label for="titleSaucer">Titulo del platillo:</label>
         <input type="text" name="titleSaucer" placeholder="Nombre del platillo" id="titleSaucer" value={{review.titleSaucer}}>
     </div>
-    <div>
+    <div class="dsd">
         <label for="descriptionSaucer">Descripcion del platillo:</label>
         <textarea name="descriptionSaucer" id="" cols="30" rows="10" id="descriptionSaucer">{{review.descriptionSaucer}}</textarea>
     </div>
-    <div>
+    <div class="rsd">
             <label for="restaurant">Restaurante</label>
             <select name="restaurant" id="restaurant" value={{review.restaurant}}>
                 <option value="zoo">zoo</option>
@@ -16,16 +24,16 @@
                 <option value="elvaquero">El vaquero</option>
             </select>
     </div>
-    <div>
+    <div class="psd"> 
         <label for="photoOfSaucer">Foto del platillo</label>
-        <input type="text" name="photoOfSaucer" placeholder="foto del platillo" id="photoOfSaucer" value={{photoOfSaucer}}>
+        <input type="text" name="photoOfSaucer" placeholder="foto del platillo" id="photoOfSaucer" value={{review.photoOfSaucer}}>
     </div>
 
-    <div>
+    <div class="prsd">
         <label for="priceOfSaucer">Precio del platillo:</label>
         <input type="number" name="priceOfSaucer" id="priceOfSaucer" value={{review.priceOfSaucer}}>
     </div>
-    <div>
+    <div class="csd">
         <label for="calificationSaucer">Calificacion del platillo:</label>
         <select name="calificationSaucer" id="calificationSaucer" value={{review.calificationSaucer}}>
             <option value="1">1 estrella</option>
@@ -37,3 +45,5 @@
     </div>
     <button>Actualizar</button>
 </form>
+</div>
+
