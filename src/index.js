@@ -1,5 +1,5 @@
 import app from "./app"
-import "./database"
+import "./databases/databaseReviews"
 import {PORT} from "./config"
 
 app.listen(PORT);

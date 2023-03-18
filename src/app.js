@@ -1,6 +1,6 @@
 import express from "express"
 import indexRoutes from "./routes/index.routes"
-import {create} from "express-handlebars";
+import {create} from "express-handlebars"
 import path from "path"
 import morgan from "morgan"
 

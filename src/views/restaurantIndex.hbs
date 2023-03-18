@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/indexFormAdd.css">
+<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
+<p>Agrega un restaurante nuevo!</p>
+
+<div class="formIndexAddReview">  
+    <form action="/restaurants/add" method="post">
+    <div class="tsd">
+        <label for="nameRestaurant">Name:</label>
+        <input type="text" name="nameRestaurant" placeholder="Nombre del restaurante" id="nameRestaurant">
+    </div>
+    <div class="dsd">
+        <label for="descriptionRestaurant">Descripcion del restaurante:</label>
+        <textarea name="descriptionRestaurant" id="" cols="30" rows="8" id="descriptionRestaurant"></textarea>
+    </div>
+    <div class="dsd">
+        <label for="shortDescriptionRestaurant">Descripcion corta del restaurante:</label>
+        <textarea name="shortDescriptionRestaurant" id="" cols="30" rows="5" id="shortDescriptionRestaurant"></textarea>
+    </div>
+    <div class="psd">
+        <label for="photoOfRestaurant">Foto:</label>
+        <input type="text" name="photoOfRestaurant" placeholder="Foto del platillo" id="photoOfRestaurant">
+    </div>
+
+    <div class="csd">
+        <label for="calificationOfRestaurant">Calificacion:</label>
+        <select name="calificationOfRestaurant" id="calificationOfRestaurant">
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select>
+    </div>
+
+    <div class="psd">
+        <label for="linkResenas">Direccion URL:</label>
+        <input type="text" name="linkResenas" placeholder="Direccion URL" id="linkResenas">
+    </div>
+    <button>Guardar restaurante</button>
+    <a href="/restaurants/view">Ver lista de restaurantes</a>
+    <a href="/">Regresar a la pagina principal</a>
+</form>
+</div>
+
+

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/indexFormAdd.css">
+<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
+<p>Agrega un nuevo contacto!</p>
+
+<div class="formIndexAddReview">  
+    <form action="/contacts/add" method="post">
+    <div class="tsd">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Nombre del contacto" id="name">
+    </div>
+    <div class="psd">
+        <label for="github">Github:</label>
+        <input type="text" name="github" placeholder="Github Del Contacto" id="github">
+    </div>
+    <div class="psd">
+        <label for="linkedin">Linkedin:</label>
+        <input type="text" name="linkedin" placeholder="Linkedin del contacto" id="linkedin">
+    </div>
+    <div class="tsd">
+        <label for="ig">Instagram:</label>
+        <input type="text" name="ig" placeholder="Nombre del restaurante" id="ig">
+    </div>
+    <button>Guardar contatcto</button>
+    <a href="/contacts/views">Ver lista de contactos</a>
+    <a href="/">Regresar a la pagina principal</a>
+</form>
+</div>

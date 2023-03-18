@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/tableViewsReviews.css">
+
+<h1>Tabla de contactos</h1>
+
+<a href="/contacts" class="aBackToAdd">Agrega un contacto</a>
+
+<div class="tableOfReviewsDiv">
+    <table>
+    <thead>
+        <tr>
+            <th>N.</th>
+            <th>Nombre</th>
+            <th>Github</th>
+            <th>Linkedin</th>
+            <th>Instagram</th>
+            <th>Opciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each contact}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{name}}</td>
+                <td>{{github}}</td>
+                <td>{{linkedin}}</td>
+                <td>{{ig}}</td>
+                <td>
+                    <a href="/contacts/edit/{{_id}}" class="editButton">Editar</a>
+                    <a href="/contacts/delete/{{_id}}" class="deleteButton">Eliminar</a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+</div>

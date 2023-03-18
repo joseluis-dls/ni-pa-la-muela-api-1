@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/css/indexFormAdd.css">
+
+<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
+<p>Agrega una reseña para nuestro blog "Ni pa la muela"</p>
+<div class="formIndexAddReview">
+    
+    <form action="/review/add" method="post">
+    <div class="tsd">
+        <label for="titleSaucer">Titulo del platillo:</label>
+        <input type="text" name="titleSaucer" placeholder="Nombre del platillo" id="titleSaucer">
+    </div>
+    <div class="dsd">
+        <label for="descriptionSaucer">Descripcion del platillo:</label>
+        <textarea name="descriptionSaucer" id="" cols="30" rows="10" id="descriptionSaucer"></textarea>
+    </div>
+    <div class="rsd">
+            <label for="restaurant">Restaurante:</label>
+            <select name="restaurant" id="restaurant" >
+                <option value="zoo">zoo</option>
+                <option value="toromambo">Toro Mambo</option>
+                <option value="elterral">El terral</option>
+                <option value="elvaquero">El vaquero</option>
+            </select>
+    </div>
+    <div class="psd">
+        <label for="photoOfSaucer">Foto del platillo:</label>
+        <input type="text" name="photoOfSaucer" placeholder="Foto del platillo" id="photoOfSaucer">
+    </div>
+
+    <div class="prsd">
+        <label for="priceOfSaucer">Precio del platillo:</label>
+        <input type="number" name="priceOfSaucer" id="priceOfSaucer" value="0">
+    </div>
+    <div class="csd">
+        <label for="calificationSaucer">Calificacion del platillo:</label>
+        <select name="calificationSaucer" id="calificationSaucer">
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select>
+    </div>
+    <button>Guardar reseña</button>
+    <a href="/reviews/view">Ver lista de reviews</a>
+    <a href="/">Regresar a la pagina principal</a>
+</form>
+</div>
+
+

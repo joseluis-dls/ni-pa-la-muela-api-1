@@ -1,7 +1,7 @@
 import Review from "../models/Review"
 
-export const renderIndex = (req,res)=>{
-    res.render("index.hbs")
+export const renderReviewsIndex = (req,res)=>{
+    res.render("reviewIndex.hbs")
 }
 
 export const renderReviews = async(req,res)=>{

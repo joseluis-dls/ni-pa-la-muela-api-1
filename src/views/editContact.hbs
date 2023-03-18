@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/indexFormAdd.css">
+<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
+<p>Agrega un nuevo contacto!</p>
+
+<div class="formIndexAddReview">  
+    <form action="/contacts/edit/{{contact._id}}" method="post">
+    <div class="tsd">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Nombre del contacto" id="name" value={{contact.name}}>
+    </div>
+    <div class="psd">
+        <label for="github">Github:</label>
+        <input type="text" name="github" placeholder="Github Del Contacto" id="github" value={{contact.github}}>
+    </div>
+    <div class="psd">
+        <label for="linkedin">Linkedin:</label>
+        <input type="text" name="linkedin" placeholder="Linkedin del contacto" id="linkedin" value={{contact.linkedin}}>
+    </div>
+    <div class="tsd">
+        <label for="ig">Instagram:</label>
+        <input type="text" name="ig" placeholder="Instagram dEL CONTACTO" id="ig" value={{contact.ig}}>
+    </div>
+    <button>Guardar contatcto</button>
+    <a href="/contacts/views">Ver lista de contactos</a>
+    <a href="/">Regresar a la pagina principal</a>
+</form>
+</div>
