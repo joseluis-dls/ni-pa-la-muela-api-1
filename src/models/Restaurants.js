@@ -26,6 +26,11 @@ const restaurantSchema = new Schema({
         type:String,
         required: true,
         unique: true
+    },
+    ubicationRestaurant:{
+        type:String,
+        required: true,
+        unique: true
     }
 });
 

@@ -15,6 +15,7 @@
             <th>Foto</th>
             <th>Calificacion</th>
             <th>link</th>
+            <th>Link Mapa</th>
             <th>Opciones</th>
         </tr>
     </thead>
@@ -27,8 +28,9 @@
                 <td>{{descriptionRestaurant}}</td>
                 <td>{{shortDescriptionRestaurant}}</td>
                 <td><img class="imgTable" src={{photoOfRestaurant}} alt=""></td>
-                <td>${{calificationOfRestaurant}}</td>
+                <td>{{calificationOfRestaurant}}</td>
                 <td>{{linkResenas}} estrellas</td>
+                <td>{{ubicationRestaurant}}</td>
                 <td>
                     <a href="/restaurants/edit/{{_id}}" class="editButton">Editar</a>
                     <a href="/restaurants/delete/{{_id}}" class="deleteButton">Eliminar</a>

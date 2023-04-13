@@ -1,4 +1,5 @@
 import {Router} from "express"
+
 import {renderReviewsIndex, 
         addReview,
         renderReviews,
@@ -20,7 +21,10 @@ import {renderIndexContact,
         editContact,
         deleteContact} from "../controllers/contacts.controllers"
 
-import {renderIndex} from "../controllers/index.controllers"
+import {renderIndex, 
+        getRestaurantsApi,
+        getReviewsApi,
+        getContactsApi} from "../controllers/index.controllers"
 
 const router = Router();
 
@@ -65,5 +69,13 @@ router.get("/contacts/edit/:id", renderEditContact)
 router.post("/contacts/edit/:id", editContact)
 
 router.get("/contacts/delete/:id", deleteContact)
+
+//Api route
+
+router.get("/api/restaurants", getRestaurantsApi)
+
+router.get("/api/reviews", getReviewsApi);
+
+router.get("/api/contacts", getContactsApi);
 
 export default router;
