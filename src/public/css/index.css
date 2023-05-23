@@ -1,9 +1,13 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
 h1{
     text-align: center;
     font-weight: 400;
     font-size: 40px;
-    margin-top: 30px;
+    margin-top: 78px;
     margin-bottom: 50px;
+    font-weight: 800;
 }
 
 p{
@@ -13,9 +17,10 @@ p{
 
 .indexDiv{
     width: 80%;
-    height: 400px;
+    height: 226px;
     background-color: rgb(233, 213, 188);
     margin-left: 10%;
+    border-radius: 10px;
 }
 
 .indexDiv h2{
@@ -27,7 +32,7 @@ p{
 }
 
 .fa{
-    margin-left: 27%;
+    margin-left: 25%;
 }
 
 .sa{
@@ -39,12 +44,24 @@ p{
 }
 
 .indexDiv a{
-    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
     color: white;
-    font-size: 17px;
-    padding: 8px;
-    background-color: rgb(51, 119, 51);
-    border: none;
-    border-radius: 10px;
+    font-size: 18px;
+    background-color: rgb(24, 121, 24);
+    text-decoration: none;
+    transition: 250ms;
+    padding: 15px;
+}
+
+.indexDiv a:hover{
+    transition: 250ms;
+    background-color: rgb(24, 121, 24);
+    cursor: pointer;
+    color: white;
+    box-shadow: green 0px 2px 30px;
 }
 

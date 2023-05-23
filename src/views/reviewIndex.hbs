@@ -1,7 +1,24 @@
 <link rel="stylesheet" href="/css/indexFormAdd.css">
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
-<p>Agrega una reseña para nuestro blog "Ni pa la muela"</p>
+<header class="header">
+
+            <div class="logo">
+                <a href="/"><img src="../public/img/logo.png" alt ="Logo del blog"/></a>
+            </div>
+            <nav>
+                <u1 class = "nav-links">
+                    <li><a href="/restaurants">Agregar restaurante</a></li> 
+                    <li><a href="/reviews">Editar reviews</a></li>   
+                </u1>
+            </nav>
+       
+</header>
+<h1 class="titleFormAddReview">Ni pa' la muela API</h1>
+<p>Agrega una reseña para nuestro blog "Ni pa' la muela".</p>
 <div class="formIndexAddReview">
     
     <form action="/review/add" method="post">
@@ -11,7 +28,7 @@
     </div>
     <div class="dsd">
         <label for="descriptionSaucer">Descripcion del platillo:</label>
-        <textarea name="descriptionSaucer" id="" cols="30" rows="10" id="descriptionSaucer"></textarea>
+        <textarea name="descriptionSaucer" id="" cols="30" rows="10" id="descriptionSaucer" placeholder="Ingrese la descripción del platillo"></textarea>
     </div>
     <div class="rsd">
             <label for="restaurant">Restaurante:</label>
@@ -43,8 +60,9 @@
     </div>
     <button>Guardar reseña</button>
     <a href="/reviews/view">Ver lista de reviews</a>
-    <a href="/">Regresar a la pagina principal</a>
+    <a href="/" class="returnButton">Regresar a la pagina principal</a>
 </form>
 </div>
+<div class="dVacio"></div>
 
 

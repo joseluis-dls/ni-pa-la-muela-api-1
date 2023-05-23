@@ -1,0 +1,113 @@
+.header{
+    position: fixed;
+    z-index: 40;
+    width: 100%;    
+    /* background-color: rgba(203, 27, 27, 0.03); */
+    box-shadow: inset 1px 170px 59px rgba(0, 0, 0, 0.51);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 50px;
+    padding: 5px 10%;
+    place-items: center;
+    backdrop-filter: blur(3px);
+    top: 0px;
+    /* transition: calc(0.2s); */
+}
+.userHead{
+    color: white;
+}
+
+.button_closeSesion{
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+}
+
+.button_closeSesion:hover{
+    transition: 250ms;
+    background-color: rgb(121, 30, 30);
+    border: 1px solid rgb(121, 30, 30);
+}
+
+.loginRedirect:hover{
+    transform: scale(0.3);
+    transition: all 250ms;
+
+}
+
+.loginRedirect{
+    margin-left: 10px;
+}
+
+.header .logo{
+    cursor:pointer;
+    width: auto;
+    height: 45px;
+}
+
+.header .logo img{
+    height: 80px;
+    width: 100%;
+    transition: all 0.3s;
+    padding-bottom: 30px; /* Se hace este padding para que la imagen chiquita se vea centrada, puede cambiar */
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+    /* place-items: center; */
+}
+
+.header .nav-links li{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 100;
+    font-size: 13px;
+    color: white;
+}
+
+.header .nav-links a{
+    font-size: 13px;
+    font: 700;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .nav-links li:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.header .nav-links li a:hover{
+    color:rgb(137, 182, 141);
+    transition: all 0.3s;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color:darkslategray;
+    padding: 9px 25px;
+    background:#ffffff;
+    border: none;
+    border-radius: 50 px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: #ffffff;
+    color:gold;
+    transform: scale(1.1);
+}

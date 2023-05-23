@@ -1,11 +1,29 @@
 <link rel="stylesheet" href="/css/indexFormAdd.css">
-<h1 class="titleFormAddReview">Ni pa la muela Api</h1>
-<p>Agrega un restaurante nuevo!</p>
+<link rel="stylesheet" href="/css/navbar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<header class="header">
+
+            <div class="logo">
+                <a href="/"><img src="../public/img/logo.png" alt ="Logo del blog"/></a>
+            </div>
+            <nav>
+                <u1 class = "nav-links">
+                    <li><a href="/restaurants">Agregar restaurante</a></li> 
+                    <li><a href="/reviews">Editar reviews</a></li>   
+                </u1>
+            </nav>
+       
+</header>
+<h1 class="titleFormAddReview">Ni pa' la muela Api</h1>
+<p>¡Agrega un restaurante nuevo!</p>
 
 <div class="formIndexAddReview">  
     <form action="/restaurants/add" method="post">
     <div class="tsd">
-        <label for="nameRestaurant">Name:</label>
+        <label for="nameRestaurant">Nombre:</label>
         <input type="text" name="nameRestaurant" placeholder="Nombre del restaurante" id="nameRestaurant">
     </div>
     <div class="dsd">
@@ -22,7 +40,7 @@
     </div>
 
     <div class="csd">
-        <label for="calificationOfRestaurant">Calificacion:</label>
+        <label for="calificationOfRestaurant">Calificación:</label>
         <select name="calificationOfRestaurant" id="calificationOfRestaurant">
             <option value="1">1 estrella</option>
             <option value="2">2 estrellas</option>
@@ -33,12 +51,12 @@
     </div>
 
     <div class="psd">
-        <label for="linkResenas">Direccion URL:</label>
+        <label for="linkResenas">Dirección URL:</label>
         <input type="text" name="linkResenas" placeholder="Direccion URL" id="linkResenas">
     </div>
 
     <div class="psd">
-        <label for="ubicationRestaurant">Mapa de google maps: </label>
+        <label for="ubicationRestaurant">Mapa de Google Maps: </label>
         <input type="text" name="ubicationRestaurant" placeholder="Link Mapa" id="ubicationRestaurant">
     </div>
     <button>Guardar restaurante</button>
