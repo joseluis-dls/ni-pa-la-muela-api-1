@@ -14,6 +14,13 @@ const corsOptions = {
     optionSuccessStatus: 200
 }
 
+app.get('/', (req, res) => {
+    const context = {
+        imagePath: '/src/public/img/logo.png' // Ruta de la imagen relativa a tu archivo de plantilla
+    };
+    res.render('index', context);
+});
+
 app.set('views', path.join(__dirname, 'views') );
 
 const exphbs = create({
