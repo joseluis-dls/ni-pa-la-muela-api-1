@@ -65,3 +65,14 @@ p{
     box-shadow: green 0px 2px 30px;
 }
 
+.logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    padding-top: 2%;
+
+}
+
+.logo a{
+    text-decoration: none;
+}
